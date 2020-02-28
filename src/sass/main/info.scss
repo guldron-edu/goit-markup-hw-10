@@ -1,0 +1,75 @@
+.info {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.info__topic {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.778;
+}
+
+.info__text {
+  font-size: 14px;
+  line-height: 1.714;
+  font-weight: 300;
+  text-align: center;
+}
+
+.info__list {
+  align-items: center;
+  margin: 0 15px;
+}
+
+.info__item {
+  margin-right: 30px;
+  flex-basis: 255px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.info__item--settings::before {
+  content: '';
+  display: block;
+  width: 255px;
+  height: 110px;
+  background-image: url('../images/icon/settings.svg');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--bank::before {
+  content: '';
+  display: block;
+  width: 255px;
+  height: 110px;
+  background-image: url('../images/icon/safe.svg');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--world::before {
+  content: '';
+  display: block;
+  width: 255px;
+  height: 110px;
+  background-image: url('../images/icon/world.svg');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info__item--compas::before {
+  content: '';
+  width: 255px;
+  height: 110px;
+  background-image: url('../images/icon/compass.svg');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

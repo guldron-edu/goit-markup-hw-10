@@ -1,0 +1,68 @@
+@keyframes nav-move {
+  0% {
+    text-decoration: none;
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(7px);
+  }
+
+  100% {
+    text-decoration: underline;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-logo {
+  0% {
+    color: #323232;
+  }
+
+  100% {
+    color: rgb(26, 188, 156);
+  }
+}
+@keyframes hero-link {
+  0% {
+    border: none;
+    background-color: rgb(26, 188, 156);
+  }
+
+  100% {
+    border: 2px solid white;
+    background-color: rgb(21, 126, 96);
+  }
+}
+
+@keyframes nc-wrapper {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes label-move {
+  0% {
+    padding-left: 15px;
+    background-color: rgb(50, 50, 50);
+  }
+
+  100% {
+    padding-left: 40px;
+    background-color: rgb(26, 188, 156);
+  }
+}
+
+@keyframes blog-link {
+  0% {
+    background-color: rgb(78, 198, 171);
+  }
+
+  100% {
+    background-color: rgb(127, 217, 199);
+  }
+}

@@ -1,0 +1,76 @@
+.footer {
+  background-blend-mode: multiply;
+  background-color: rgb(78, 198, 171);
+  background-image: url('../images/footer.jpg');
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 135px;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: rgb(81, 81, 81);
+  padding-bottom: 30px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 8px;
+    margin: 20px auto 0 auto;
+    width: 165px;
+    padding: 2px 0;
+    background-color: rgb(255, 255, 255);
+    background-clip: content-box;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+}
+
+.footer__text {
+  font-size: 16px;
+  font-family: $secondary-font;
+  color: rgb(255, 255, 255);
+  line-height: 1.625;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.footer__subscribe {
+  position: relative;
+}
+
+.subscribe__input-mail {
+  height: 60px;
+  width: 540px;
+  border-radius: 6px;
+  padding-left: 30px;
+  border: none;
+  font-size: 16px;
+  font-family: $secondary-font;
+  line-height: 1.625;
+}
+
+.subscribe__input-button {
+  position: absolute;
+  right: 302px;
+  top: 2px;
+  background-color: rgb(78, 198, 171);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90px;
+  height: 56px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+
+  &:hover .icon--big,
+  &:focus .icon--big {
+    transform: scale(1.1);
+  }
+}
+
+.icon--big {
+  height: 40px;
+  width: 55px;
+}

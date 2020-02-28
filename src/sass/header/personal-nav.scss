@@ -1,0 +1,67 @@
+.head {
+  font-family: $secondary-font;
+}
+
+.head__personal {
+  position: fixed;
+  height: 50px;
+  color: rgb(254, 254, 254);
+  background-color: #1abc9c;
+  font-size: 14px;
+  font-weight: 300;
+  z-index: 3;
+  width: 100%;
+}
+
+.personal-nav__inner {
+  display: flex;
+}
+
+.personal-nav__contacts {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.contacts-list__link,
+.management-list__link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  height: 50px;
+  transform: scale(1);
+  transition: transform 250ms $t-function;
+
+  &:hover,
+  &:focus {
+    color: rgb(32, 18, 58);
+    transform: scale(1.2);
+  }
+}
+
+.contacts-list__link--tell::before {
+  display: inline-block;
+  height: 20px;
+  width: 35px;
+  content: '';
+  background-image: url('../images/icon/call.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contacts-list_link--mail::before {
+  background-image: url('../images/icon/mail.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 45px;
+  content: '';
+  background-size: contain;
+  background-position: center;
+}
+
+.personal-nav__management {
+  display: flex;
+  justify-content: center;
+}

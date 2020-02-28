@@ -1,0 +1,25 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'vars.scss';
+@import 'base.scss';
+@import 'common-styles.scss';
+
+// Animation
+@import 'animation.scss';
+
+// Header
+@import './header/personal-nav.scss';
+@import './header/site-nav.scss';
+
+// Main
+@import './main/hero.scss';
+@import './main/info.scss';
+@import './main/new-collection.scss';
+@import './main/gallery.scss';
+@import './main/blog.scss';
+
+// Footer
+@import './footer/footer.scss';
